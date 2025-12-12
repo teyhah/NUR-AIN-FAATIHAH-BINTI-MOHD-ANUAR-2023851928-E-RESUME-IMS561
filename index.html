@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #007acc;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .menu-container a {
+      background: #00b4d8;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .menu-container a:hover {
+      background: #005f99;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      flex: 1;
+      max-width: 900px;
+      margin: 80px auto 40px; 
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+
+    header {
+      background: linear-gradient(135deg, #007acc, #00b4d8);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      color: #007acc;
+      margin: 20px 0 10px;
+      border-left: 4px solid #00b4d8;
+      padding-left: 8px;
+      font-size: 1.2em;
+    }
+
+    .summary-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .summary-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .summary-flex {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .summary-img {
+      width: 220px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .summary-img:hover {
+      transform: scale(1.05);
+    }
+    .summary-text {
+      flex: 1;
+      font-size: 1em;
+      color: #333;
+    }
+
+    footer {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 0.7em;
+      border-top: 2px solid #00b4d8;
+      position: fixed;
+      bottom: 0;  
+      left: 0;
+      width: 100%;   
+    }
+
+    audio {
+      display: block;
+      margin: 20px auto;
+      width: 300px;
+      border: 2px solid #007acc;
+      border-radius: 8px;
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NUR AIN FAATIHAH BINTI MOHD ANUAR</h1>
+      <p>BACHELOR OF INFORMATION SCIENCE | Terengganu, Malaysia</p>
+      <p>Email: teyhah35@gmail.com | Phone: +60 183804706</p>
+    </header>
+
+    <section>
+      <div class="menu-container">
+        <a href="index.html" target="right">HOME</a>
+        <a href="pers.html" target="right">PERSONAL BACKGROUND</a>
+        <a href="education.html" target="right">EDUCATION</a>
+        <a href="activities.html" target="right">ACTIVITIES</a>
+        <a href="skills.html" target="right">SKILLS</a>
+        <a href="contact.html" target="right">CONTACT</a>
+      </div>
+
+    <h2>SUMMARY</h2>
+    <div class="summary-card summary-flex">
+      <a href="sound.mp3" target="_blank">
+        <img src="smy.jpg" alt="Summary" class="summary-img">
+</a>
+      <div class="summary-text">
+        <p>
+          Ain enjoys learning, exploring new ideas, and working with others. 
+          She manages her tasks well and always gives her best in every project. 
+          Also, she is eager to gain more experience, build skills, and contribute to a positive academic environment.
+        </p>
+      </div>
+    </div>
+
+    <audio controls>
+      <source src="lofi.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AIN FAATIHAH | Bachelor of Information Science</p>
+  </footer>
+</body>
+</html>

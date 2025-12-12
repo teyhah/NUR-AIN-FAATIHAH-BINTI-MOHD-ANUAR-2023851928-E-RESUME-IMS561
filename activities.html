@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACTIVITIES</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #007acc;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .menu-container a {
+      background: #00b4d8;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .menu-container a:hover {
+      background: #005f99;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      flex: 1;
+      max-width: 900px;
+      margin: 80px auto 40px; 
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+
+    header {
+      background: linear-gradient(135deg, #007acc, #00b4d8);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      color: #007acc;
+      margin: 20px 0 10px;
+      border-left: 4px solid #00b4d8;
+      padding-left: 8px;
+      font-size: 1.2em;
+    }
+
+    .activity-card {
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    .activity-card li {
+      font-weight: bold;
+      color: #2e4d2e;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .activity-card p {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+      margin: 0;
+    }
+
+    .activity-card img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .activity-card span {
+      flex: 1;
+      font-size: 0.95em;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .video-box {
+      display: flex;
+      justify-content: center;
+  background-image: url("blib.jpeg");
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    .video-box video {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 4/ 3; 
+      border-radius: 20px;
+    }
+    .video-desc {
+      margin-top: 12px;
+      font-size: 0.95em;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 0.7em;
+      border-top: 2px solid #00b4d8;
+      position: fixed;
+      bottom: 0;  
+      left: 0;
+      width: 100%;   
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NUR AIN FAATIHAH BINTI MOHD ANUAR</h1>
+      <p>BACHELOR OF INFORMATION SCIENCE | Terengganu, Malaysia</p>
+      <p>Email: teyhah35@gmail.com | Phone: +60 183804706</p>
+    </header>
+
+    <section>
+      <div class="menu-container">
+        <a href="index.html" target="right">HOME</a>
+        <a href="pers.html" target="right">PERSONAL BACKGROUND</a>
+        <a href="education.html" target="right">EDUCATION</a>
+        <a href="activities.html" target="right">ACTIVITIES</a>
+        <a href="skills.html" target="right">SKILLS</a>
+        <a href="contact.html" target="right">CONTACT</a>
+      </div>
+
+      <h2>EXTRA CURRICULAR ACTIVITIES</h2>
+<div class="activity-card">
+        <strong>1. PSB X DEWAN BAHASA DAN PUSTAKA: FORUM KECERDASAN AI</strong>
+        <p>
+          <img src="forum.jpeg" alt="Forum Kecerdasan AI">
+          <span>Collaboration between the Perpustakaan Sultan Badlishah, UiTM Kedah and Dewan Bahasa dan Pustaka in realizing the AI Intelligence Forum program at Dewan Perdana, UiTM Kedah.</span>
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <strong>2. BLIBS X INSTICT: MERBOK BOOK FEST</strong>
+        <div class="video-box">
+          <video controls poster="MBF-poster.jpg">
+            <source src="blibs.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="video-desc">
+          This clip highlights the collaboration between BliBs and Instict, featuring participating bookstores and activities over two days at Dewan Perdana, UiTM Kedah.
+        </p>
+      </div>
+
+      <div class="activity-card">
+        <strong>3. BLIBS: MEET AND GREET WITH NEW STUDENTS</strong>
+        <p>
+          <img src="MnG.jpeg" alt="Meet and Greet">
+          <span>A Meet and Greet session was held with new students to give them basic exposure and understanding of the Library Management course.</span>
+        </p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 AIN FAATIHAH | Bachelor of Information Science</p>
+  </footer>
+</body>
+</html>

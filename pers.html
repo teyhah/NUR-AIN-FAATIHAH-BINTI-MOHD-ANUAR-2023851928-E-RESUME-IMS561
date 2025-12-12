@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERSONAL BACKGROUND</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #007acc;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .menu-container a {
+      background: #00b4d8;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .menu-container a:hover {
+      background: #005f99;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      flex: 1;
+      max-width: 900px;
+      margin: 80px auto 40px; 
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007acc, #00b4d8);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      color: #007acc;
+      margin: 20px 0 10px;
+      border-left: 4px solid #00b4d8;
+      padding-left: 8px;
+      font-size: 1.2em;
+    }
+
+    .card-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card-box h3 {
+      margin-top: 0;
+      color: #007acc;
+      border-left: 4px solid #00b4d8;
+      padding-left: 10px;
+    }
+
+    .center-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .center-image img {
+      display: block;
+      margin: auto;
+      width: 200px;
+      height: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 0.7em;
+      border-top: 2px solid #00b4d8;
+      position: fixed;
+      bottom: 0;  
+      left: 0;
+      width: 100%;   
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <a href="index.html" target="right">HOME</a>
+    <a href="pers.html" target="right">PERSONAL BACKGROUND</a>
+    <a href="education.html" target="right">EDUCATION</a>
+    <a href="activities.html" target="right">ACTIVITIES</a>
+    <a href="skills.html" target="right">SKILLS</a>
+    <a href="contact.html" target="right">CONTACT</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>NUR AIN FAATIHAH BINTI MOHD ANUAR</h1>
+      <p>BACHELOR OF INFORMATION SCIENCE | Terengganu, Malaysia</p>
+      <p>Email: teyhah35@gmail.com | Phone: +60 183804706</p>
+    </header>
+
+    <section>
+      <h2>PERSONAL BACKGROUND</h2>
+      <div class="card-box">
+        <table>
+          <tr>
+            <td rowspan="10" width="250">
+              <img src="picresume.jpg" alt="Profile Picture" style="width:200px;height:300px;">
+            </td>
+            <td class="label">Name:</td>
+            <td class="info-box">NUR AIN FAATIHAH BINTI MOHD ANUAR</td>
+          </tr>
+          <tr><td class="label">Age:</td><td class="info-box">22 YEARS OLD</td></tr>
+<tr><td class="label">Birth Date:</td><td class="info-box">18 FEBRUARY 2003</td></tr>
+          <tr><td class="label">Birth Place:</td><td class="info-box">HOSPITAL SULTANAH NUR ZAHIRAH, TERENGGANU</td></tr>
+          <tr><td class="label">Home Address:</td><td class="info-box">BLOK G,106 BANDAR AL MUKTAFI BILLAH SHAH, 23400, DUNGUN, TERENGGANU</td></tr>
+          <tr><td class="label">Religion:</td><td class="info-box">ISLAM</td></tr>
+          <tr><td class="label">Gender:</td><td class="info-box">FEMALE</td></tr>
+          <tr><td class="label">Phone Number:</td><td class="info-box">018-3284705</td></tr>
+          <tr><td class="label">Email:</td><td class="info-box">teyhah35@gmail.com</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>MY RESUME</h2>
+<div class="card-box">
+  <div style="text-align: center;">
+    <img src="resume.jpeg" alt="Resume Picture" style="width:750px;height:800px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  </div>
+</div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AIN FAATIHAH | Bachelor of Information Science</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDUCATION</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #007acc;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .menu-container a {
+      background: #00b4d8;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .menu-container a:hover {
+      background: #005f99;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      flex: 1;
+      width: 50%;      
+      margin: 100px auto 40px; 
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      box-sizing: border-box;   
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007acc, #00b4d8);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      color: #007acc;
+      margin: 20px 0 10px;
+      border-left: 4px solid #00b4d8;
+      padding-left: 8px;
+      font-size: 1.2em;
+    }
+
+    .school-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .school-info h3 {
+      margin: 0 0 15px 0;
+      color: #007acc;
+      text-align: center;
+    }
+
+    .school-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .school-content img {
+      width: 200px;
+      height: 150px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      background: #e0f7fa;
+      color: #007acc;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-size: 0.85em;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 0.7em;
+      border-top: 2px solid #00b4d8;
+      position: fixed;
+      bottom: 0;  
+      left: 0;
+      width: 100%;   
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <a href="index.html">HOME</a>
+    <a href="pers.html">PERSONAL BACKGROUND</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="activities.html">ACTIVITIES</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>NUR AIN FAATIHAH BINTI MOHD ANUAR</h1>
+      <p>BACHELOR OF INFORMATION SCIENCE | Terengganu, Malaysia</p>
+      <p>Email: teyhah35@gmail.com | Phone: +60 183804706</p>
+    </header>
+
+    <h2>EDUCATION</h2>
+
+    <div class="school-card">
+      <div class="school-info">
+        <h3>SK DURIAN MAS 2 – (2010–2015)</h3>
+        <div class="school-content">
+          <a href="https://www.facebook.com/skdm2page/?locale=ms_MY">
+            <img src="SKDM2.jpeg" alt="SK DURIAN MAS 2">
+          </a>
+        </div>
+      </div>
+    </div>
+<div class="school-card">
+      <div class="school-info">
+        <h3>SMKA KUALA ABANG – (2016–2020)</h3>
+        <div class="school-content">
+          <a href="https://www.facebook.com/smkakadungun/?locale=ms_MY">
+            <img src="SMKAKA.png" alt="SMKA KUALA ABANG">
+          </a>
+          <div class="badges">
+            <span class="badge">PT3: 4A</span>
+            <span class="badge">SPM: 2A 4B+ 2B 2C+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="school-card">
+      <div class="school-info">
+        <h3>SMKA DURIAN GULING – (2021–2023)</h3>
+        <div class="school-content">
+          <a href="https://smkadg.edu.my/">
+            <img src="SMKADG.jpeg" alt="SMKA DURIAN GULING">
+          </a>
+          <div class="badges">
+            <span class="badge">STPM: 3.17</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="school-card">
+      <div class="school-info">
+        <h3>UNIVERSITI TEKNOLOGI MARA (UiTM) – (2023–2026)</h3>
+        <div class="school-content">
+          <a href="https://kedah.uitm.edu.my">
+            <img src="Uitm.jpeg" alt="UiTM Kedah">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AIN FAATIHAH | Bachelor of Information Science</p>
+  </footer>
+</body>
+</html>

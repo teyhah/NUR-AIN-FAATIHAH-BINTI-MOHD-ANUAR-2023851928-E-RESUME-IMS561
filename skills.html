@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKILLS</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #007acc;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .menu-container a {
+      background: #00b4d8;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .menu-container a:hover {
+      background: #005f99;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      flex: 1;
+      max-width: 900px;
+      margin: 80px auto 40px; 
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+
+    header {
+      background: linear-gradient(135deg, #007acc, #00b4d8);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      color: #007acc;
+      margin: 20px 0 10px;
+      border-left: 4px solid #00b4d8;
+      padding-left: 8px;
+      font-size: 1.2em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+ul.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+ul.skills-list li {
+  background: #e0f7fa;      
+  color: #007acc;            
+  padding: 12px 20px;
+  border-radius: 25px;        
+  font-weight: bold;
+  font-size: 0.95em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ul.skills-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background: #b2ebf2;      
+}
+    .skills span {
+      display: inline-block;
+      background: #e0f7fa;
+      color: #007acc;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+
+    footer {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 0.7em;
+      border-top: 2px solid #00b4d8;
+      position: fixed;
+      bottom: 0;  
+      left: 0;
+      width: 100%;   
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NUR AIN FAATIHAH BINTI MOHD ANUAR</h1>
+      <p>BACHELOR OF INFORMATION SCIENCE| Terengganu, Malaysia</p>
+      <p>Email: teyhah35@gmail.com | Phone: +60 183804706</p>
+    </header>
+ 
+    <section>
+      <div class="menu-container">
+        <a href="index.html" target="right">HOME</a>
+        <a href="pers.html" target="right">PERSONAL BACKGROUND</a>
+        <a href="education.html" target="right">EDUCATION</a>
+        <a href="activities.html" target="right">ACTIVITIES</a>
+        <a href="skills.html" target="right">SKILLS</a>
+        <a href="contact.html" target="right">CONTACT</a>
+      </div>
+  <h2>SKILLS</h2>
+  <ul class="skills-list">
+    <li>🧩 Problem Solving</li>
+    <li>⏰ Time Management</li>
+    <li>📊 Utilize Power BI</li>
+    <li>✍️ Writings</li>
+    <li>💻 HTML/CSS</li>
+    <li>🗂️ Classification</li>
+    <li>🌐 Digital Literacy</li>
+  </ul>
+</section>
+</div>
+  <footer>
+    <p>&copy; 2025 AIN FAATIHAH | Bachelor of Information Science</p>
+  </footer>
+</body>
+</html>
